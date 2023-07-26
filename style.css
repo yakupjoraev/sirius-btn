@@ -1,0 +1,68 @@
+.sirius-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 179px;
+  height: 179px;
+  cursor: pointer;
+}
+
+.sirius-btn:hover svg {
+  transform: rotate(120deg);
+}
+
+.sirius-btn:hover .sirius-btn__inner svg {
+  transform: translate(-50%, -50%) rotate(-180deg);
+}
+
+.sirius-btn:hover .sirius-btn__inner svg path {
+  fill: #6ACC74;
+}
+
+.sirius-btn:hover .sirius-btn__text {
+  color: #6ACC74;
+}
+
+.sirius-btn svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  transition: transform 1s linear;
+}
+
+.sirius-btn__inner {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sirius-btn__inner svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 139px;
+  height: 138px;
+
+  transition: transform 1s linear;
+}
+
+.sirius-btn__inner svg path {
+  transition: 0.8s linear;
+}
+
+.sirius-btn__text {
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #E09E9A;
+  text-align: center;
+
+  transition: color 0.8s linear;
+}
